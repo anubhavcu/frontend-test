@@ -1,0 +1,144 @@
+.tileContainer {
+    background-size: 100% 100%;
+    height: 100%;
+    padding-bottom: 25vh;
+    border-radius: 25px;
+}
+
+.tileContainer:hover>* {
+    opacity: 0.2;
+}
+
+/* .tileContainer:hover > *:hover{ */
+/*         transform:scale(1.1); */
+/*         opacity:1 */
+/* } */
+/* same as above */
+.tileContainer:hover> :hover,
+.tileContainer:focus-within> :focus {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.tileContainer {
+    pointer-events: none;
+}
+
+.tileContainer>* {
+    pointer-events: auto;
+}
+
+/* below is optional for handling hovering over siblings if there is already focused element */
+.tileContainer:hover> :focus:not(:hover) {
+    transform: scale(1.05);
+}
+
+/* .card { */
+
+
+/*     border-radius: 100px; */
+/* } */
+
+.tileContainer:hover .card-text {
+    /* font-weight: bold; */
+}
+
+.tile {
+    position: relative;
+    display: inline-block;
+    height: 33%;
+    /* max-height: 250px; */
+    width: 22%;
+    margin: 5px;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    /* margin-bottom: 5px; */
+    /* margin-top: 2px; */
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    /* min-height: 100%; */
+    /* overflow: visible; */
+}
+
+/* .tile > img { */
+/*     display: inline-block; */
+/*     flex: 1; */
+/*     margin: 1px; */
+/* } */
+
+.tileImage {
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.timeImage {
+    background-image: url("../../assests/Icons/Icon feather-clock.png");
+    height: 17px;
+    width: 17px;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+.heartImage {
+    background-image: url("../../assests/Icons/Icon feather-heart.png");
+    height: 26px;
+    width: 30px;
+    float: right;
+    margin: 5px;
+    /* margin-top: 5px; */
+    /* margin-right: 5px */
+}
+
+.viewMore {
+    display: none;
+}
+
+.quickView {
+    display: none
+}
+
+/* .tile:hover, */
+/* .tile:active { */
+/*     background-color: blue; */
+/* } */
+/* .overlay { */
+/*     background: navy; */
+/*     display: none; */
+/*     /1* height: 200px; *1/ */
+/*     height: 100%; */
+/*     /1* width: 200px; *1/ */
+/*     position: relative; */
+
+/* } */
+
+/* .tile:hover span.overlay { */
+/*     display: block; */
+/* } */
+
+.tile:hover .viewMore {
+
+    display: block;
+    /* margin: 0 auto; */
+    position: absolute;
+    margin-bottom: 50vh;
+    /* margin-left: 50px; */
+    float: center;
+    top: 35%;
+    left: 30%;
+    width: 50%
+}
+
+.tile:hover .quickView {
+
+    display: block;
+    /* margin: 0 auto; */
+    position: absolute;
+    margin-bottom: 50vh;
+    /* margin-left: 50px; */
+    float: center;
+    margin-top: 45px;
+    top: 35%;
+    left: 30%;
+    width: 50%
+}
