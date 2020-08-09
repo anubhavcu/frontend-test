@@ -2,7 +2,7 @@
     "name": "test",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://github.com/anubhavcu/frontend-test",
+    "homepage": "https://anubhavcu.github.io/frontend-test/",
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
